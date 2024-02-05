@@ -3,68 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Heraz</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Tipificacion B</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/img/PharmaMind.png" type="image/png">
 </head>
 <body>
-    
-
-    <div class="loader">
-        <div class="loader-circle"></div>
-    </div>   
-
-    <div class="container">
-            <video autoplay loop muted playsinline>
-                <source src="assets/Biblio.mp4" type="video/mp4">
-            </video>
-
-
-        <div class="link-bio">
-            <div class="profile-photo">
-                <img src="
-
-                https://previews.123rf.com/images/jemastock/jemastock1702/jemastock170203756/71266076-ilustración-de-vector-de-elementos-de-biblioteca-de-biblioteca-de-libros-de-libro.jpg
-                
-                    "
-                alt="foto-JoelHeaz">
-            </div>
-            <p>Libros</p>
-
-            <div class="link-buttons">
-                <ul>
-                    <p>Química</p>
-                    <li><a href="https://drive.google.com/file/d/1XgdmjedkhXPt06AD__doYBdV2OHI3otG/view?usp=drive_link">Quimica Organica McMurry</a></li>
-                    <li><a href="https://drive.google.com/file/d/1MLlJXTY13ZTAzd_UxbuTUjb4HQ7xshuX/view?usp=drive_link">Mecanismos de Reaccion de Groutas</a></li>
-                    <li><a href="https://drive.google.com/file/d/1-kr9WTU6CY85tga959Slp74ebgJ2cKgv/view?usp=drive_link">Investigacion de Mecanismos</a></li>
-                    <li><a href="https://drive.google.com/file/d/15Hdld5Vnu18Bz9GBazS6WXyg6RQGxFah/view?usp=drive_link">Algebra Universitaria</a></li>
-                    <li><a href="https://drive.google.com/file/d/1HBfNsN772FRzyl6madooIyEiTMyBE3fT/view?usp=drive_link">Administracion de medicamentos Adelaida</a></li>
-                    <li><a href="https://drive.google.com/file/d/1xHRpKFQYnW7p0Ijshsgt_YZ-Xkh0NgGa/view?usp=drive_link">Genetica 2a Ed</a></li>
-
-                    <p>Idiomas</p>
-                    <li><a href="https://drive.google.com/file/d/1b_HnFxijDK0JzTHov72XW8EoIu0lpIab/view?usp=drive_link">Assimil Ingles</a></li>
-                    <li><a href="https://drive.google.com/file/d/1b1V9nDwaawLs0-YXSNhLqSmA2X410Enm/view?usp=drive_link">Assimil Japones</a></li>
-
-                    <p>Noviazgo</p>
-                    <li><a href="https://drive.google.com/file/d/1yK66QdDJQV5ZINyXo5jp4thC0vaghxVW/view?usp=drive_link">Rompe el ciclo de Alicia Muñoz</a></li>
-                    <li><a href="https://drive.google.com/file/d/1cqTrwVmyyF4msnMrrILR1T155lZPxgUK/view?usp=drive_link">Apego de LaFuente Benaches</a></li>
-                    <li><a href="https://drive.google.com/file/d/1ZKXc9TIVkW3k5gWad9psRHQLrv9bRigG/view?usp=drive_link">Asertividad de Castanyer</a></li>
-                    <li><a href="https://drive.google.com/file/d/1tYfp6IL_7RntC5tyAi_xySMKR4QRd7MI/view?usp=drive_link">Noviazgo Exitoso</a></li>
-                    <li><a href="https://drive.google.com/file/d/1NaVmoaaDJLFjPyGqwXiEVP6cLKj3ivoR/view?usp=drive_link">Relaciones toxicas</a></li>
-                    <li><a href="https://drive.google.com/file/d/1Wb9E0RV-WshtEsXHlwRGFePXGKZ85pJb/view?usp=drive_link">Ciencia del amor</a></li>
-
-                    <p>Otros</p>
-                    <li><a href="https://drive.google.com/file/d/1COTs9M9PRQvLYsIaMZ_X647oU31rtvzo/view?usp=drive_link">De Animales a Dioses</a></li>
-                </ul>
-            </div>
-
-            <p>©2024 Heraz</p>
-   
+    <header>
+        <div class="nav container">
+        <a href="index.html" class="logo">Biblioteca<span>Heraz</span></a>
+      <!--  <a href="" class="login">Login</a> -->  
         </div>
+    </header>
+
+    <section class="home">
+        <div class="home-text container">
+            <img class="PharmaMindLogo" src="assets/img/PharmaMind.png" alt="">
+
+            <h2 class="home-tittle">Biblioteca Heraz</h2>
+            <span class="home-subtittle">Abre las puertas al conocimiento</span>
+        </div>
+    </section>
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">Todo</span>
+        <span class="filter-item" data-filter="quimica">Química</span>
+        <span class="filter-item" data-filter="arquitectura">Arquitectura</span>
+        <span class="filter-item" data-filter="amor">Amor</span>
+        <span class="filter-item" data-filter="idiomas">Idiomas</span>
+        <span class="filter-item" data-filter="novelas">Novelas</span>
+        <span class="filter-item" data-filter="original">Originales</span>
+        <span class="filter-item" data-filter="otros">Otros</span>
     </div>
 
+    <section class="post container">
+
+        <div class="post-box quimica">
+            <img src="https://m.media-amazon.com/images/I/714zyaW8qwL._AC_UF1000,1000_QL80_.jpg" alt="" class="post-img">
+            <h2 class="category">Química</h2>
+            <a href="https://drive.google.com/file/d/1XgdmjedkhXPt06AD__doYBdV2OHI3otG/view?usp=drive_link" class="post-tittle">
+                Quimica Organica McMurry
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://img.perlego.com/books/RM_Books/taylor_francis_lm_feonmi/9781000887198.jpg" alt="" class="post-img">
+            <h2 class="category">Química</h2>
+            <a href="https://drive.google.com/file/d/1MLlJXTY13ZTAzd_UxbuTUjb4HQ7xshuX/view?usp=drive_link" class="post-tittle">
+                Mecanismos de Reaccion de Groutas
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://www.shutterstock.com/image-vector/beautiful-chemistry-vector-seamless-pattern-600nw-207946306.jpg" alt="" class="post-img">
+            <h2 class="category">Química</h2>
+            <a href="https://drive.google.com/file/d/1-kr9WTU6CY85tga959Slp74ebgJ2cKgv/view?usp=drive_link" class="post-tittle">
+                Investigacion de Mecanismos
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://i.pinimg.com/736x/2b/18/19/2b18199aba9bfc1a0d76448e3a6899dc.jpg" alt="" class="post-img">
+            <h2 class="category">Matematicas</h2>
+            <a href="https://drive.google.com/file/d/15Hdld5Vnu18Bz9GBazS6WXyg6RQGxFah/view?usp=drive_link" class="post-tittle">
+                Algebra Universitaria
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion esta en la categoria de quimica, luego lo arreglo XD</p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://s2.ppllstatics.com/rc/www/multimedia/2023/04/14/medicamentos45-U190498373246hyE-U20064268799TGC-1200x840@El%20Correo.jpeg" alt="" class="post-img">
+            <h2 class="category">Química</h2>
+            <a href="https://drive.google.com/file/d/1HBfNsN772FRzyl6madooIyEiTMyBE3fT/view?usp=drive_link" class="post-tittle">
+                Administracion de medicamentos Adelaida
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://img.freepik.com/fotos-premium/fondo-adn-dinamico-fondos-pantalla-pancartas-o-plantillas-cientificas_795881-11835.jpg" alt="" class="post-img">
+            <h2 class="category">Química</h2>
+            <a href="https://drive.google.com/file/d/1xHRpKFQYnW7p0Ijshsgt_YZ-Xkh0NgGa/view?usp=drive_link" class="post-tittle">
+                Genetica 2a Ed
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        
+        <div class="post-box idiomas">
+            <img src="https://imgv2-1-f.scribdassets.com/img/document/158451820/original/9477efc9c8/1704512508?v=1" alt="" class="post-img">
+            <h2 class="category">Idiomas</h2>
+            <a href="https://drive.google.com/file/d/1b_HnFxijDK0JzTHov72XW8EoIu0lpIab/view?usp=drive_link" class="post-tittle">
+                Assimil Ingles
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box idiomas">
+            <img src="https://m.media-amazon.com/images/I/41sbW2s7MPL._AC_UF894,1000_QL80_.jpg" alt="" class="post-img">
+            <h2 class="category">Idiomas</h2>
+            <a href="https://drive.google.com/file/d/1b1V9nDwaawLs0-YXSNhLqSmA2X410Enm/view?usp=drive_link" class="post-tittle">
+                Assimil Japones
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="https://cdn.kobo.com/book-images/dab0a450-3925-419d-b943-a13b733f4a55/1200/1200/False/rompe-el-ciclo-1.jpg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1yK66QdDJQV5ZINyXo5jp4thC0vaghxVW/view?usp=drive_link" class="post-tittle">
+                Rompe el ciclo de Alicia Muñoz
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201711/03/00106532558282____5__640x640.jpg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1cqTrwVmyyF4msnMrrILR1T155lZPxgUK/view?usp=drive_link" class="post-tittle">
+                Apego de LaFuente Benaches
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="https://m.media-amazon.com/images/I/7157T+aWzPL._AC_UF894,1000_QL80_.jpg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1ZKXc9TIVkW3k5gWad9psRHQLrv9bRigG/view?usp=drive_link" class="post-tittle">
+                Asertividad de Castanyer
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="https://images.pexels.com/photos/3139497/pexels-photo-3139497.jpeg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1tYfp6IL_7RntC5tyAi_xySMKR4QRd7MI/view?usp=drive_link" class="post-tittle">
+                Noviazgo Exitoso
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="https://c1.wallpaperflare.com/preview/190/67/674/affection-afterglow-backlit-blur.jpg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1NaVmoaaDJLFjPyGqwXiEVP6cLKj3ivoR/view?usp=drive_link" class="post-tittle">
+                Relaciones toxicas
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box amor">
+            <img src="assets/img/post-1.jpg" alt="" class="post-img">
+            <h2 class="category">Amor</h2>
+            <a href="https://drive.google.com/file/d/1Wb9E0RV-WshtEsXHlwRGFePXGKZ85pJb/view?usp=drive_link" class="post-tittle">
+                Ciencia del amor
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box otros">
+            <img src="https://pendulo.com/imagenes_grandes/9786073/978607312798.GIF" alt="" class="post-img">
+            <h2 class="category"> Otros </h2>
+            <a href="https://drive.google.com/file/d/1COTs9M9PRQvLYsIaMZ_X647oU31rtvzo/view?usp=drive_link" class="post-tittle">
+                De Animales a Dioses
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box original">
+            <img src="https://img.wattpad.com/cover/334099627-256-k651171.jpg" alt="" class="post-img">
+            <h2 class="category"> Originales </h2>
+            <a href="https://www.wattpad.com/1328045998-amor-en-pandemia-wintersars-capitulo-1-portada" class="post-tittle">
+                WinterSARS
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box original">
+            <img src="https://img.wattpad.com/cover/182651097-256-k716498.jpg" alt="" class="post-img">
+            <h2 class="category"> Originales </h2>
+            <a href="https://www.wattpad.com/711822373-revolución-estelar-afn-trailer" class="post-tittle">
+                AFN Revolicion Estelar
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        
+        <div class="post-box original">
+            <img src="https://img.wattpad.com/cover/236695357-256-k148698.jpg" alt="" class="post-img">
+            <h2 class="category"> Originales </h2>
+            <a href="https://www.wattpad.com/story/236695357-victimas-del-sistema" class="post-tittle">
+                Victimas del sistema
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        
+        <div class="post-box original">
+            <img src="https://img.wattpad.com/cover/233874497-256-k150197.jpg" alt="" class="post-img">
+            <h2 class="category"> Originales </h2>
+            <a href="https://www.wattpad.com/936008444-pemex-al-servicio-de-la-patria-book-trailer" class="post-tittle">
+                Pemex: Al servicio de la patria
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box novelas">
+            <img src="https://pics.filmaffinity.com/Los_juegos_del_hambre-634460284-large.jpg" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/1TWwVe2m_xjiQhFH6liwHZSNZ2zmeJRGD/view?usp=drive_link" class="post-tittle">
+                Los juegos de hambre vol 1
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box novelas">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/d1c76cca56edc8b446c6ced86e2562bdb395c8f67349cca5489414f5e1fa4191.jpg" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/1jFhMj4JdB529rAF8UiqwIi1Nwee1LB3n/view?usp=drive_link" class="post-tittle">
+                Los juegos de hambre vol 2 En Llamas
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box novelas">
+            <img src="https://i.blogs.es/74a70a/juegos-del-hambre-poster/1366_2000.jpg" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/18jjI3NaUlONKLniKVPFeSV39GOJ4rTB1/view?usp=drive_link" class="post-tittle">
+                Los juegos de hambre vol 3 Sinsajo
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box otros">
+            <img src="https://imagessl2.casadellibro.com/a/l/s5/82/9788425352782.webp" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/1hgWIrGCNou4QSHHZAqXSENShSBMQmYte/view?usp=drive_link" class="post-tittle">
+                Los videojuegos De Gina Tost
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box quimica">
+            <img src="https://cdn-2.zlibrary.to/media/content/thumbnails/0f9eaa6e-d4aa-4e23-802f-0ff809e01ad7.webp" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/1i8tRi9FegClPQAVeQUGXy4exv1PIhAqB/view?usp=drive_link" class="post-tittle">
+                Nomenclatura de Química Organica de Ciriano
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
 
 
+        <div class="post-box arquitectura">
+            <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/e3/32/e3320253cf7c7284b489d1ddc42154b0.jpg" alt="" class="post-img">
+            <h2 class="category"> Arquitectura </h2>
+            <a href="https://drive.google.com/file/d/1B2t2dDQWI3ax1HdKJRGHn-ph2bbetIXl/view?usp=drive_link" class="post-tittle">
+                Bioclimatica de Garzon
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box arquitectura">
+            <img src="https://m.media-amazon.com/images/I/71PVwSNi3XL._AC_UF1000,1000_QL80_.jpg" alt="" class="post-img">
+            <h2 class="category"> Arquitectura </h2>
+            <a href="https://drive.google.com/file/d/14EHsVJMjY8WwliVBXhbif2X6jsbTwV79/view?usp=drive_link" class="post-tittle">
+                Lecciones de arquitectura de Gallego
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+        <div class="post-box novelas">
+            <img src="https://imagessl1.casadellibro.com/a/l/s5/81/9788490322581.webp" alt="" class="post-img">
+            <h2 class="category"> Novelas </h2>
+            <a href="https://drive.google.com/file/d/1Uc9TR878ZGV78c19Az3O35TrKMy9YSMG/view?usp=drive_link" class="post-tittle">
+                El Angel de la muerte
+            </a>
+            <span class="post-date"> Fecha</span>
+            <p class="post-description"> Descripcion </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
+
+    </section>
+
+
+    <div class="footer conainer">
+        <p>&#169; Heraz 2024 Todos los Derechos Reservados</p>
+        <!--<div class="social">
+            <a href="https://www.linkedin.com/in/manuelheraz/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://manuelheraz.github.io/portafolio/"><i class='bx bxs-briefcase-alt-2' ></i></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://github.com/ManuelHeraz"><i class='bx bxl-github' ></i></a>
+        </div>-->  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
