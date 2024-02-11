@@ -10,7 +10,7 @@
 
 :root{
     --container-color: #1a1e21;
-    --second-color: #005c91;  
+    --second-color: #7a0000;  
     --text-color: #333333;
     --bg-color: #fff;
 }
@@ -76,6 +76,13 @@ header.shadow .logo{
     color: var(--second-color);
 }
 
+.des-slider{
+    position: absolute;
+    color: var(--bg-color);
+    margin-top: 15%;
+    margin-left: 0%;
+}
+
 .login{
     padding: 8px 14px;
     text-transform: uppercase;
@@ -83,12 +90,16 @@ header.shadow .logo{
     border-radius: 4px;
     background-color: var(--second-color);
     color: var(--bg-color);
+   position: absolute;
+   margin-top: 20%;
+   margin-left: 5%;
 }
 
 .login:hover{
     background: hsl(24, 98%, 58%);
     transition: 0.3s;
 }
+
 
 .home{
     width: 100%;
@@ -116,6 +127,111 @@ header.shadow .logo{
     font-size: 1rem;
     font-weight: 400;
 }
+
+.slider{
+    margin-top: 5%;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--second-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: var(--bg-color);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--second-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--second-color);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--second-color);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--second-color);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--second-color);
+}
+
 
 .post-filter{
     display: flex;
@@ -349,6 +465,15 @@ header.shadow .logo{
 
 .autor-name a{
     color: var(--second-color);
+}
+
+.chatBox{
+    width: 250px;
+    height: 350px; 
+    position: fixed; 
+    top: 72%; 
+    right: 0; 
+    transform: translateY(-50%);
 }
 
 @media (max-width: 1060px){
