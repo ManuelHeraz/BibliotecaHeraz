@@ -90,9 +90,6 @@ header.shadow .logo{
     border-radius: 4px;
     background-color: var(--second-color);
     color: var(--bg-color);
-   position: absolute;
-   margin-top: 20%;
-   margin-left: 5%;
 }
 
 .login:hover{
