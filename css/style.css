@@ -389,6 +389,11 @@ header.shadow .logo{
     color: var(--second-color);
 }
 
+.msc{
+    margin-left: 20%;
+    align-items: center;
+}
+
 .chatBox{
     width: 250px;
     height: 350px; 
