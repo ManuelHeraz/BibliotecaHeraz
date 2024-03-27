@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="assets/img/PharmaMind.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <div class="nav container">
-        <a href="index.html" class="logo">Biblioteca<span>Heraz</span></a>
-        <a href="https://www.animenexus.net" class="login">radio anime</a> 
-        <a href="https://manuelheraz.github.io/MusicaHeraz/" class="login">mp3</a> 
-        <a href="https://live.planetf1.com" class="login">f1 tablero</a> 
-        <a href="https://www.telextrema.com/fox-sports-premium-en-vivo.html" class="login">fox</a> 
-        <a href="https://slidingtiles.com/en" class="login">puzzle</a> 
+        <div class="navbar">
+            <a href="index.html" class="logo">Biblioteca Heraz</a>
+            <ul id="menuList">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="https://www.animenexus.net">radio anime</a> </li>
+                <li><a href="https://manuelheraz.github.io/MusicaHeraz/" >mp3</a> </li>
+                <li><a href="https://live.planetf1.com" >f1 tablero</a> </li>
+                <li><a href="https://www.telextrema.com/fox-sports-premium-en-vivo.html">fox</a> </li>
+                <li><a href="https://slidingtiles.com/en">puzzle</a> </li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </div>
     </header>
 
@@ -31,8 +41,8 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/30/f8/30f8f558cdbedb0fe519306d6e0aae69.jpg" alt="">
-                        <div class="login"><a class="login" href="https://drive.google.com/file/d/1TWwVe2m_xjiQhFH6liwHZSNZ2zmeJRGD/view"> Leer Ahora </a></div>
+                        <img src="https://www.penguinlibros.com/es/1528455-home_default/la-rueda-de-la-vida.jpg" alt="">
+                        <div class="login"><a class="login" href="https://drive.google.com/file/d/1WFdF3Vp7g8it7V0lGPuqnSAw9qUmnlF5/view?usp=drive_link"> Leer Ahora </a></div>
                     </div>
 
                     <div class="swiper-slide">
@@ -57,8 +67,8 @@
 
                     
                     <div class="swiper-slide">
-                        <img src="https://m.media-amazon.com/images/I/416mbzgpfML.jpg" alt="">
-                        <div class="login"><a class="login" href="https://drive.google.com/file/d/1BpNA6oR_2r1YHd1ZIC47DebjZ5G47eq4/view"> Leer Ahora </a></div>
+                        <img src="https://m.media-amazon.com/images/I/61iH2isQrBL._AC_UF1000,1000_QL80_.jpg" alt="">
+                        <div class="login"><a class="login" href="https://drive.google.com/file/d/1flmUPcr0P_UoaJGpWSN573OXQQ2AAQT3/view?usp=drive_link"> Leer Ahora </a></div>
                     </div>
 
                     <div class="swiper-slide">
@@ -1518,13 +1528,24 @@
             </div>-->  
         </div>
 
+        <div class="post-box evida">
+            <img src="https://www.penguinlibros.com/es/1528455-home_default/la-rueda-de-la-vida.jpg" alt="" class="post-img">
+            <h2 class="category"> estilo de vida </h2>
+            <a href="https://drive.google.com/file/d/1WFdF3Vp7g8it7V0lGPuqnSAw9qUmnlF5/view?usp=drive_link" class="post-tittle">
+                La Rueda de la vida
+            </a>
+            <span class="post-date"> Elisabeth Kübler-Ross </span>
+            <p class="post-description"> La rueda de la vida es el legado espiritual de esta extraordinaria mujer que, al reconciliarnos con la muerte, nos enseñó a amar la vida. Elisabeth Kübler-Ross supo desde muy joven que su misión era aliviar el sufrimiento humano, y ese compromiso la llevó al cuidado de enfermos terminales </p>
+            <!--<div class="profile">
+                <div class="profile-img">
+                    <img src="assets/img/Profiles/JoseHernandezD.jpeg" alt="" class="profile-img">
+                    <span class="profile-name">Heraz</span>
+                </div>
+            </div>-->  
+        </div>
+
     </section>
 
-    <div class="msc">
-        <section class="msc">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4ZEbEHSBLrwQhDmGy8iO24?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </section>
-    </div>
 
     <div class="footer conainer">
         <p>&#169; Heraz 2024 Todos los Derechos Reservados</p>
@@ -1547,6 +1568,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="js/slider.js"></script>
+
+    <script src="js/navbar.js"></script>
 
 </body>
 </html>

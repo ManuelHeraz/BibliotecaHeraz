@@ -41,6 +41,7 @@ section{
     width: 100%;   
 }
 
+
 header{
     position: fixed;
     top: 0;
@@ -59,11 +60,14 @@ header.shadow .logo{
     color: var(--text-color);
 }
 
-.nav{
+.navbar{
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px;
+    background: var(--second-color);
+    position: relative;
+    height: 80px;
 }
 
 .logo{
@@ -72,8 +76,29 @@ header.shadow .logo{
     color: var(--bg-color);
 }
 
-.logo span{
-    color: var(--second-color);
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    color: var(--bg-color);
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: var(--bg-color);
+    font-size: 30px;
 }
 
 .des-slider{
@@ -139,7 +164,7 @@ header.shadow .logo{
 }
 
 .swiper {
-    width: 80%;
+    width: 90%;
 }
 
 .swiper-slide{
@@ -155,12 +180,13 @@ header.shadow .logo{
 }
 
 
-.post-filter{
+.post-filter {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1.5rem;
+    gap: 1.5rem; /* column-gap fue renombrado a gap en CSS */
     margin-top: 2rem !important;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
 }
 
 .filter-item{
@@ -411,13 +437,16 @@ header.shadow .logo{
     .home-text{
         width: 100%;
     }
+    .navbar ul li a{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 800px){
     .PharmaMindLogo{
         width: 30%;
     }
-    .nav {
+    .navbar {
         padding: 14px 0;
     }
 
@@ -462,6 +491,36 @@ header.shadow .logo{
 }
 
 @media (max-width: 570px){
+
+    .navbar ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: var(--second-color);
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .navbar ul li{
+        padding: 1%;
+        
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        transition: all 0.5s;
+    }
+
+    .container{
+        margin-top: 8%;
+        max-width: 400px;
+    }
 
     .post-header{
         height: 390px;
