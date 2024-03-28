@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --container-color: #1a1e21;
+    --second-color: #7a0000;  
+    --text-color: #333333;
+    --bg-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container{
+    max-width: 1086px;
+    margin: 0 auto;
+    width: 100%;   
+}
+
+
+.search{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search i{
+    font-size: 25px;
+    color: var(--second-color);
+}
+
+.search-txt{
+    display: flex;
+    align-items: center;
+}
+
+.search-txt i{
+    font-size: 40px;
+    color: var(--second-color);
+}
+
+.search-txt h2{
+    color: var(--container-color);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.music{
+    padding: 50px 0 150px 0;
+}
+
+.music h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.swiper{
+    width: 90%;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.icons{
+    padding: 0 350px 50px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i{
+    font-size: 25px;
+    color: var(--container-color);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: var(--second-color);
+    color: var(--bg-color);
+}
+
+.login:hover{
+    background: hsl(24, 98%, 58%);
+    transition: 0.3s;
+}
+
+@media (max-width:991px) {
+    body{
+        min-height: 0vh;
+    }
+
+    .search{
+        padding: 30px 30px 0 30px;
+    }
+
+    .music{
+        padding: 30px;
+    }
+
+    .icons{
+        padding: 30px;
+    }
+}

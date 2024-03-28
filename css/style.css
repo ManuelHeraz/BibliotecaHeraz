@@ -31,6 +31,36 @@ img{
     width: 100%;
 }
 
+.search{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search i{
+    font-size: 25px;
+    padding: 1%;
+    color: var(--second-color);
+}
+
+.search-txt{
+    display: flex;
+    align-items: center;
+}
+
+.search-txt i{
+    font-size: 40px;
+    color: var(--second-color);
+}
+
+.search-txt h2{
+    color: var(--container-color);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
 section{
     padding: 3rem 0 2rem;
 }
@@ -84,6 +114,13 @@ header.shadow .logo{
 
 .navbar ul li{
     list-style-type: none;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+.navbar ul li:hover{
+    background: #a82700;
+    transition: 0.3s;
 }
 
 .navbar ul li a{
